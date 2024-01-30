@@ -5,8 +5,8 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url('./1-timer.css');
+@import url('./2-snackbar.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +22,37 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+.index-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 25px;
+  font-size: 50px;
+}
+.index-list-item1 {
+  background-color: aqua;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 250ms ease-in-out;
+}
+.index-list-item2 {
+  background-color: rgb(241, 121, 102);
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 250ms ease-in-out;
+}
+.index-row {
+  display: flex;
+  gap: 15px;
+}
+
+.index-list-item1:hover {
+  transform: scale(1.1);
+}
+
+.index-list-item2:hover {
+  transform: scale(1.1);
 }
