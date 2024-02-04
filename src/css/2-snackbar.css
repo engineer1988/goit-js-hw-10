@@ -1,0 +1,50 @@
+fieldset {
+  margin: 0;
+  padding: 0;
+  width: 362px;
+  height: 78px;
+  box-sizing: border-box;
+}
+fieldset label input {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+}
+.legend-div {
+  display: flex;
+  gap: 54px;
+  margin-left: 48px;
+  position: relative;
+  top: 7px;
+}
+.div-label {
+  display: flex;
+  gap: 48px;
+  margin: 0;
+}
+.radio-label {
+  display: flex;
+  gap: 20px;
+}
+.radio-label input {
+  position: relative;
+  top: 2px;
+}
+.number {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.input {
+  width: 360px;
+  height: 40px;
+}
+
+.button {
+  width: 360px;
+  height: 40px;
+  margin-top: 24px;
+}
