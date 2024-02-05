@@ -24,6 +24,7 @@ const options = {
   onClose(selectedDates) {
     const selectedDate = selectedDates[0];
     const time = Date.now();
+
     if (time < selectedDate) {
       userSelectedDate = selectedDate.getTime();
       console.log(selectedDate.getTime());

@@ -1,11 +1,11 @@
-fieldset {
+.fieldset {
   margin: 0;
   padding: 0;
   width: 362px;
   height: 78px;
   box-sizing: border-box;
 }
-fieldset label input {
+.fieldset .label-radio .input-fieldset {
   margin: 0;
   width: 20px;
   height: 20px;
@@ -13,7 +13,7 @@ fieldset label input {
   font-weight: 400;
   font-size: 16px;
 }
-.legend-div {
+.div-fieldset {
   display: flex;
   gap: 54px;
   margin-left: 48px;
@@ -25,11 +25,11 @@ fieldset label input {
   gap: 48px;
   margin: 0;
 }
-.radio-label {
+.label-radio {
   display: flex;
   gap: 20px;
 }
-.radio-label input {
+.label-radio .input-fieldset {
   position: relative;
   top: 2px;
 }

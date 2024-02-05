@@ -16,19 +16,21 @@
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
+
     <form class="form">
       <label class="number">
         Delay (ms)
         <input class="input" type="number" name="delay" required />
       </label>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>State</legend>
-        <div class="legend-div">
+
+        <div class="div-fieldset">
           <div class="div-label">
-            <label class="radio-label">
+            <label class="label-radio">
               <input
-                class="state-input"
+                class="input-fieldset"
                 type="radio"
                 name="state"
                 value="fulfilled"
@@ -37,10 +39,11 @@
               Fulfilled
             </label>
           </div>
+
           <div class="div-label">
-            <label class="radio-label">
+            <label class="label-radio">
               <input
-                class="state-input"
+                class="input-fieldset"
                 type="radio"
                 name="state"
                 value="rejected"
@@ -54,6 +57,7 @@
 
       <button class="button" type="submit">Create notification</button>
     </form>
+
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>

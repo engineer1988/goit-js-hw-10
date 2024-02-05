@@ -9,15 +9,15 @@
   margin-top: 32px;
   text-transform: uppercase;
 }
-.label {
+.field-label {
   font-size: 12px;
   font-weight: bold;
 }
-.value {
+.field-value {
   font-size: 30px;
   text-align: center;
 }
-input {
+.input-text {
   width: 272px;
   height: 40px;
   border-radius: 4px;
@@ -33,7 +33,7 @@ input {
   letter-spacing: 0.04em;
   box-sizing: border-box;
 }
-button {
+.button-start {
   width: 75px;
   height: 40px;
   display: flex;
@@ -57,7 +57,7 @@ button {
   gap: 8px;
   width: 355px;
 }
-.value {
+.field-value {
   color: #2e2f42;
   font-family: Montserrat;
   font-size: 40px;
@@ -66,7 +66,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.04em;
 }
-.label {
+.field-label {
   color: #2e2f42;
   font-family: Montserrat;
   font-size: 16px;
@@ -75,20 +75,20 @@ button {
   line-height: 1.5;
   text-align: center;
 }
-button:hover {
+.button-start:hover {
   background-color: #6c8cff;
 }
-input:hover {
+.input-text:hover {
   border: 1px solid #000000;
 }
-input:active {
+.input-text:active {
   border: 1px solid #4e75ff;
 }
-.input-button button:disabled {
+.button-start:disabled {
   background-color: #cfcfcf;
   color: #989898;
 }
-input:disabled {
+.input-text:disabled {
   background: #f5f5f5;
   border: 1px solid #808080;
 }
