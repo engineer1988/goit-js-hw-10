@@ -3,14 +3,14 @@ import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const btn = document.querySelector('[data-start]');
+const startButton = document.querySelector('[data-start]');
 const dataDays = document.querySelector('[data-days]');
 const dataHours = document.querySelector('[data-hours]');
 const dataMinutes = document.querySelector('[data-minutes]');
 const dataSeconds = document.querySelector('[data-seconds]');
 const input = document.querySelector('#datetime-picker');
 
-btn.setAttribute('disabled', 'true');
+startButton.setAttribute('disabled', 'true');
 
 let userSelectedDate = 0;
 let diff;
@@ -28,7 +28,7 @@ const options = {
     if (time < selectedDate) {
       userSelectedDate = selectedDate.getTime();
       console.log(selectedDate.getTime());
-      btn.removeAttribute('disabled');
+      startButton.removeAttribute('disabled');
     } else {
       iziToast.error({
         iconUrl: '../img/icons.svg',
@@ -42,12 +42,12 @@ const options = {
         messageColor: 'white',
         titleColor: 'white',
       });
-      btn.setAttribute('disabled', 'true');
+      startButton.setAttribute('disabled', 'true');
     }
   },
 };
 
-btn.addEventListener('click', () => {
+startButton.addEventListener('click', () => {
   timer.start();
 });
 
@@ -55,7 +55,7 @@ const timer = {
   intervalId: null,
 
   start() {
-    btn.setAttribute('disabled', 'true');
+    startButton.setAttribute('disabled', 'true');
     input.setAttribute('disabled', 'true');
 
     this.intervalId = setInterval(() => {

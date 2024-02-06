@@ -1,12 +1,12 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const btn = document.querySelector('.form');
+const form = document.querySelector('.form');
 
 function createPromise(event) {
   event.preventDefault();
-  const delay = btn.delay.value;
-  const state = btn.state.value;
+  const delay = form.delay.value;
+  const state = form.state.value;
 
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -43,4 +43,7 @@ function createPromise(event) {
       })
     );
 }
-btn.addEventListener('submit', createPromise);
+form.addEventListener('submit', createPromise);
+form.addEventListener('submit', () => {
+  form.reset();
+});
